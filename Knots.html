@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoutskills | Knot Tying</title>
+    <link rel="icon" type="image/png" href="images/hat-removebg-preview.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <script src="https://kit.fontawesome.com/0665ed3c0a.js" crossorigin="anonymous"></script>
+    <script src="javascript-functions.js"></script>
+</head>
+<body id="knots">
+
+<header>
+    <a href="index.html" id="DNS"><image src="images\hat-removebg-preview.png" alt="Home Logo" id="homelogo" ></image></a>
+    <h1 class="title">Scoutskills</h1>
+</header>    
+
+
+
+<nav class="navpanel">
+    
+    <ul>
+        <a href="index.html">
+            <li class="navbox">
+                Home
+            </li>
+        </a>
+    
+    
+        <li class="navbox" id="dropdown">
+            <a href="Tutorials.html">Tutorials</a>
+            <div class = "dcontent">
+                <a href="Knots.html">Knot Tying</a>
+                <a href="Fire Building.html" class="WIP">Fire Building</a>
+                <a href="Map Reading.html" class="WIP">Map Reading</a>
+
+            </div>
+        </li>
+        <a href="About.html">
+            <li class="navbox">
+                About
+            </li>
+        </a>
+
+        <form id="searchbox">
+            <label for="search"><span class="material-symbols-outlined" id="search-icon">search</span></label>
+            <input id="search" placeholder="Search... (Does not work)" class="searchbar" type="search">
+        </form>
+    </ul>
+    
+</nav>
+
+<h1 id="basic-knots-title">5 Basic Knots (and how to tie them)</h1>
+
+<div id="knots-menu">
+    <button id="ohk-button" class="knots-menu-item" type="button" onclick="show_ohk()"><b>Overhand Knot</b></button>
+    <button id="hk-button" class="knots-menu-item" type="button" onclick="show_half_knot()"><b>Half Knot</b></button>
+    <button id="rk-button" class="knots-menu-item" type="button" onclick="show_reef_knot()"><b>Reef Knot</b></button>
+    <button id="sb-button" class="knots-menu-item" type="button" onclick="show_sheet_bend()"><b>Sheet bend</b></button>
+    <button id="sk-button" class="knots-menu-item" type="button" onclick="show_slip_knot()"><b>Slip Knot</b></button>
+</div>
+
+<main id="ohk-main-grid-display">
+    
+    <div class="box" id="title" style="grid-area: title">The Overhand Knot</div>
+    <div class="box" style="grid-area: txt1" id="box-special">The Overhand Knot is the simplest of the stopper knots and is a very good knot to learn first. Stopper Knots are primarily used on the end of a length of rope in order to prevent it from unravelling or slipping through an opening. For example, Overhand Knots are often used on the ends of hoodie drawstrings so that they do not come out of the hood.</div>
+    <div class="box" style="grid-area: txt2">To tie an Overhand Knot, you must first make a loop by placing the end of the rope over the rest of the rope.</div>
+    <div class="box" style="grid-area: txt3">You then should tuck the end under the rope and back up through the loop.</div>
+    <div class="box" style="grid-area: txt4" id="box-special"> Fun fact:<br><br>The Overhand Knot is especially useful because it is very fast to tie and can be tied in small spaces.</div>
+    <div class="box" style="grid-area: txt5">After the knot is tightened, it creates a small stopper.</div>
+    
+    <div class="image-container" style="grid-area: img1">Step 1<image class="img"  src="images/knots_photos/OVH-1.JPG"></image></div>
+    <div class="image-container" style="grid-area: img2">Step 2<image class="img"  src="images/knots_photos/OVH-2.JPG"></image></div>
+    <div class="image-container" style="grid-area: img3">Step 3<image class="img"  src="images/knots_photos/OVH-3.JPG"></image></div>
+</main>
+
+
+
+
+<main id="half-knot-main-grid-display">
+    <div class="box" id="title" style="grid-area: title">The Half Knot</div>
+    <div class="box" style="grid-area: txt1" id="box-special">
+        This knot is most commonly tied as the first step to another, the Square (or reef) Knot, and is known as a binding knot. 
+        Binding knots are usually used to tie or bind two objects together, usually using both ends of the same rope. 
+    </div>
+    <div class="box" style="grid-area: txt2">To tie a Half Knot, first take the two ends of the rope and cross them over each other.</div>
+    <div class="box" style="grid-area: txt3">You must then pass one end over and then under the other, making the knot look symmetrical.</div>
+    <div class="box" style="grid-area: txt4" id="box-special">Half knots are also used as the first step in tying shoelaces, keeping them tight and stopping the bow from sliding.</div>
+    <div class="box" style="grid-area: txt5">Pull both ends of the knot at the same time to tighten.</div>
+
+    <div class="image-container" style="grid-area: img1">Step 1<image class="img"  src="images/knots_photos/HK-2.JPG"></image></div>
+    <div class="image-container" style="grid-area: img2">Step 2<image class="img"  src="images/knots_photos/HK-3.JPG"></image></div>
+    <div class="image-container" style="grid-area: img3">Step 3<image class="img"  src="images/knots_photos/HK-4.JPG"></image></div>
+
+</main>
+
+
+
+<main id="reef-knot-main-grid-display">
+    <div class="box" id="title" style="grid-area: title">The Reef (or Square) Knot</div>
+    <div class="box" style="grid-area: txt1" id="box-special">
+        The Reef Knot is the slightly more advanced version of the Half Knot and similarly, it is also a binding knot. 
+        However, the Square Knot should not be trusted under high loads or in dangerous conditions as it may unravel. 
+        If not tied correctly, the Granny Knot can be made, which is even weaker than the Square Knot.
+    </div>
+    <div class="box" style="grid-area: txt2">To tie a Reef Knot, you must begin by tying a Half Knot, in either direction (right over left end or left over right end). </div>
+    <div class="box" style="grid-area: txt3">The extra step in the Reef Knot is to tie another Half Knot using the same ends that were produced by the first. Finally, pull on both ends to tighten.</div>
+    <div class="box" style="grid-area: txt4" id="box-special">An important thing to note here is to make sure to tie the second Half Knot in the opposite direction as the first. Not doing so will result in a Granny Knot.</div>
+
+    <div class="image-container" style="grid-area: img1">Step 1<image class="img"  src="images/knots_photos/RFK-1.JPG"></image></div>
+    <div class="image-container" style="grid-area: img2">Step 2<image class="img"  src="images/knots_photos/RFK-2.JPG"></image></div>
+    <div class="image-container" style="grid-area: img3">Step 3<image class="img"  src="images/knots_photos/RFK-3.JPG"></image></div>
+    <div class="image-container" style="grid-area: img4">Step 4<image class="img"  src="images/knots_photos/RFK-4.JPG"></image></div>
+    <div class="image-container" style="grid-area: img5">Step 5<image class="img"  src="images/knots_photos/RFK-5.JPG"></image></div>
+
+</main>
+
+
+<main id="sheet-bend-main-grid-display">
+    <div class="box" id="title" style="grid-area: title">The Sheet Bend</div>
+    <div class="box" style="grid-area: txt1" id="box-special">
+        A Sheet Bend is primarily used to join two ropes of different width. 
+        It forms a strong connection between the two ropes and can hold a large amount of weight if the ends of the knot are left long. 
+        It is often used to make nets and when making sails.
+    </div>
+    <div class="box" style="grid-area: txt2">
+        The first step in tying a Sheet Bend is to form a bight in the thicker of the ropes. 
+        To form a bight, fold the end of a piece of rope back on itself so that the end lies alongside the rest of the piece of rope. 
+    </div>
+    <div class="box" style="grid-area: txt3">There should be a loop formed in the bight. Pass the thinner rope's end through the loop, keeping the bight. </div>
+    <div class="box" style="grid-area: txt4">Take the thinner end behind/under the thicker end and rope and then tuck the thinner rope under itself and tighten.</div>
+
+    <div class="image-container" style="grid-area: img1">Step 1<image class="img"  src="images/knots_photos/SB-1.JPG"></image></div>
+    <div class="image-container" style="grid-area: img2">Step 2<image class="img"  src="images/knots_photos/SB-2.JPG"></image></div>
+    <div class="image-container" style="grid-area: img3">Step 3<image class="img"  src="images/knots_photos/SB-3.JPG"></image></div>
+    <div class="image-container" style="grid-area: img4">Step 4<image class="img"  src="images/knots_photos/SB-4.JPG"></image></div>
+    <div class="image-container" style="grid-area: img5">Step 5<image class="img"  src="images/knots_photos/SB-5.JPG"></image></div>
+    <div class="image-container" style="grid-area: img6">Step 6<image class="img"  src="images/knots_photos/SB-6.JPG"></image></div>
+    <div class="image-container" style="grid-area: img7">Step 7<image class="img"  src="images/knots_photos/SB-7.JPG"></image></div>
+</main>
+
+
+<main id="slip-knot-main-grid-display">
+    <div class="box" id="title" style="grid-area: title">The Slip Knot</div>
+    <div class="box" style="grid-area: txt1" id="box-special">
+        A Slip Knot is another stopper knot, similar to the Overhand Knot, and is sometimes even called the Slipped Overhand Knot due to its similar properties. 
+        The difference between the Slip Knot and the Overhand Knot however, is that the Slip Knot is able to be untied by pulling a single end. 
+        This makes it useful in areas such as knitting, but it would not be recommended as a permanent stopper knot. 
+    </div>
+    <div class="box" style="grid-area: txt2">
+        To tie a Slip Knot, first tuck the end of the rope under the rest of the rope, forming a loop. 
+    </div>
+    <div class="box" style="grid-area: txt3">Next make a bight with the end of the rope by folding it back on itself, still keeping the loop. </div>
+    <div class="box" style="grid-area: txt4" id="box-special">Fun fact: <br><br>A common misconception is that a Slip Knot is any kind of sliding loop, however Slip Knots are actually a kind of stopper knot.</div>
+    <div class="box" style="grid-area: txt5">Finally, tuck the bight into the loop, and tighten the loop around the bight. To release the Slip Knot, simply pull on the end of the rope!</div>
+
+    <div class="image-container" style="grid-area: img1">Step 1<image class="img"  src="images/knots_photos/SK-1.JPG"></image></div>
+    <div class="image-container" style="grid-area: img2">Step 2<image class="img"  src="images/knots_photos/SK-2.JPG"></image></div>
+    <div class="image-container" style="grid-area: img3">Step 3<image class="img"  src="images/knots_photos/SK-3.JPG"></image></div>
+    <div class="image-container" style="grid-area: img4">Step 4<image class="img"  src="images/knots_photos/SK-4.JPG"></image></div>
+    <div class="image-container" style="grid-area: img5">Step 5<image class="img"  src="images/knots_photos/SK-5.JPG"></image></div>
+    <div class="image-container" style="grid-area: img6">Step 6<image class="img"  src="images/knots_photos/SK-6.JPG"></image></div>
+    <div class="image-container" style="grid-area: img7">Step 7<image class="img"  src="images/knots_photos/SK-7.JPG"></image></div>
+</main>
+
+<footer>
+    <div id="f-p1">
+        <div class="website-name">
+            Scoutskills
+        </div>
+        <a href="mailto:jfmarsden@outlook.com" target="_self"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:jfmarsden@outlook.com?subject=Bug%20Report&body=I%20would%20like%20to%20report%20a%20bug%20in%20Scoutskills" target="_self"><i class="fa-solid fa-bug"></i></a>
+    </div>
+    <div id="f-p2">
+        <h1>Tutorials:</h1>
+        <br>
+        <a href="Knots.html">Knots</a>
+        <a href="Fire Building.html">Fire Building</a>
+        <a href="Map Reading.html">Map Reading</a>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
