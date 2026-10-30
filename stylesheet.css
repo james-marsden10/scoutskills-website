@@ -91,7 +91,7 @@ a{
 
 #home{
     margin: 0;
-    background-color: hsla(240, 97%, 75%, 0.226);;
+    background-color: hsla(240, 97%, 75%, 0.226);
     height: 100%;
 }
 
@@ -121,7 +121,7 @@ header{
 }
 
 .navpanel{
-    height: 50px;
+    height: fit-content;
     width: 100%;
     background-color: hsl(240, 100%, 75%);
     margin: 0;
@@ -164,6 +164,7 @@ header{
     padding: 10px;
     border-radius: 5px;
     transition: background 0.25s;
+    font-size: 0.8em;
 }
 
 .dcontent{
@@ -409,9 +410,9 @@ header{
     background-color: hsl(182, 25%, 50%);
     width: 100%;
     height: fit-content;
-    padding: max(60px,6%);
-    padding-bottom: max(50px,5%);
-    padding-top: max(150px,15%);
+    padding: 80px;
+    padding-bottom: 60px;
+    padding-top: 200px;
     margin-top: -200px;
 }
 
@@ -978,15 +979,114 @@ footer{
     position: relative;
 }
 
+/* ¦¦ Knots Quiz */
 
+#knots-quiz {
+    background-color: hsl(234, 55%, 78%);
+    font-family: Montserrat;
+    margin: 0;
+}
 
+#knots-quiz .quiz-title {
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+}
 
+#knots-quiz #quiz {
+    background-color: hsla(231, 100%, 14%, 0.808);
+    width: min(100%,1000px);
+    justify-self: center;
+    border-radius: 30px;
+    padding: 1%;
+        display: flex;
+    flex-direction: column;
+}
 
+#knots-quiz h2 {
+    font-size: 1.5em;
+    color: hsl(0, 0%, 66%);
+} 
 
+#knots-quiz .question {
+    margin-bottom: 20px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    justify-self: center;
+    border-radius: 30px;
+    padding: 4%;
+}
 
+#knots-quiz #quiz label {
+    margin-top: 20px;
+    display: block;
+    background-color: hsla(231, 100%, 60%, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+    color: hsl(180, 5%, 81%);
+    cursor: pointer;
+    transition: all 0.25s;
+}
 
+#knots-quiz #quiz label:hover {
+    background-color: hsla(231, 100%, 60%, 0.65);
+}
 
+#knots-quiz #quiz label:has(input:checked) {
+    background-color: hsla(231, 100%, 60%, 1);
+}
 
+#knots-quiz #quiz label input {
+    display:none;
+}
+
+#knots-quiz #quiz #submitButton {
+    all: unset;
+    margin-top: 20px;
+    display: block;
+    background-color: hsla(231, 100%, 60%, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+    color: hsl(180, 5%, 81%);
+    cursor: pointer;
+    transition: all 0.25s;
+    width: 20%;
+    text-align: center;
+    align-self: flex-end;
+}
+
+#knots-quiz #quiz #submitButton:hover {
+    background-color: hsla(231, 100%, 60%, 0.65);
+
+}
+
+#knots-quiz #quiz #score {
+    margin-top: 20px;
+    display: none;
+    background-color: hsla(231, 100%, 60%, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+    color: hsl(180, 5%, 81%);
+    cursor: pointer;
+    transition: all 0.25s;
+    width: 40%;
+    text-align: center;
+    align-self: flex-start;
+}
+
+#knots-quiz #quiz #questions {
+    margin-top: 20px;
+    display: none;
+    background-color: hsla(231, 100%, 60%, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+    color: hsl(180, 5%, 81%);
+    cursor: pointer;
+    transition: all 0.25s;
+    width: 40%;
+    text-align: center;
+    align-self: flex-start;
+    line-height: 1.8;
+}
 
 
 
@@ -1011,14 +1111,126 @@ footer{
 
 /* ¦¦ RWD */
 
-@media screen and (max-width:900px){
-    #intro .heading, #intro h2, #part2 .heading{
+@media (pointer: coarse) and (hover: none) {
+    #dropdown-box {
+        pointer-events: none;
+        transition-delay: 0.5s;
+    }
+}
+
+@media screen and (max-width:1400px){
+    #part2 div{
+        width: 100%;
+        transition: width 0.5s;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #part2 .gallery-object {
+        width: 30vw;
+        transition: width 0.5s;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #knots main{
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+            "title"
+            "txt2"
+            "txt3"
+            "txt5"
+            "img1"
+            "img2"
+            "img3"
+            "txt1"
+            "txt4";
+    }
+    #knots main .box{
+        height: fit-content;
+    }
+    #knots #reef-knot-main-grid-display {
+        grid-template-areas: 
+            "title"
+            "txt2"
+            "txt3"
+            "txt5"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "txt1"
+            "txt4";
+    }
+    #knots #sheet-bend-main-grid-display {
+        grid-template-areas: 
+            "title"
+            "txt2"
+            "txt3"
+            "txt5"
+            "txt4"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "txt1"
+            ;
+
+    }
+    #knots #slip-knot-main-grid-display {
+        grid-template-areas: 
+            "title"
+            "txt2"
+            "txt3"
+            "txt5"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "txt1"
+            "txt4"
+            ;
+    }
+    #knots footer {
+        display: none;
+    }
+    #knots #basic-knots-title {
+        font-size: 3em;
+        width: 90%;
+    }
+    #knots #knots-menu {
+        display: flex;
+        width: 90%
+    }
+    #part2 .heading {
+        width:100%;
+        font-size: 45px;
+    }
+
+    #knots::before {
+        background-repeat: repeat;
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-aspect-ratio: 1/1.2){
+    #intro .heading, #intro h2 {
         width:100%
     }
     #part2 .gallery-object{
-        width: min(400px,80vw);
+        width: min(600px,80vw);
         transition: width 0.5s;
-        height: 400px;
         height: auto;
     }
     #part2 div{
@@ -1027,12 +1239,18 @@ footer{
     #part2 .description{
         font-size: 30px;
     }
+    #home footer {
+        display: none;
+    }
+    #home {
+        background-color: hsl(241, 100%, 17%);
+    }
 }
 
-@media screen and (max-width:1400px){
-    #part2 div{
-        width: 100%;
-        transition: width 0.5s;
+@media screen and (max-width: 800px) {
+    #knots #knots-menu .knots-menu-item {
+        font-size: max(2vw,0.8em);
+        width: 16%;
     }
 }
 
@@ -1062,3 +1280,5 @@ footer{
         display:none
     }
 }
+
+
