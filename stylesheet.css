@@ -194,11 +194,11 @@ header{
     color: hsl(241, 100%, 17%);
 }
 
-.dcontent a:link{
+.dcontent:link{
     color: hsl(241, 100%, 17%);
 }
 
-.dcontent a:visited{
+.dcontent:visited{
     color: hsl(241, 100%, 17%);
 }
 
